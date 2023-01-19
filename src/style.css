@@ -1,0 +1,24 @@
+/* .do {
+    color: red;
+    text-decoration: line-through;
+  }
+  .done {
+    color: green;
+  } */
+  
+  .container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+  
+  .done {
+
+    color: black;
+  }
+  
+  .do {
+    text-decoration: line-through;
+    color: gray;
+  }
