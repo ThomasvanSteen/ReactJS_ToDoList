@@ -4,7 +4,7 @@ import './style.css';
 
 
 export default function Counter() {
-    const [amount, setCounter] = useState(0);
+    const [amount, setCounter] = useState(1);
    
     //increase counter
     const increase = () => {
@@ -16,7 +16,7 @@ export default function Counter() {
     }
     //decrease counter
 const decrease = () => {
-    if (amount > 0) {
+    if (amount > 1) {
       setCounter(amount => amount - 1);
     }
   };

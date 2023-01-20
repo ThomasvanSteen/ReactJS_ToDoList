@@ -1,24 +1,45 @@
-/* .do {
-    color: red;
-    text-decoration: line-through;
-  }
-  .done {
-    color: green;
-  } */
+h1 {
+  font-style: italic;
+}
   
-  .container {
-    display: flex;
-    text-align: center;
-    align-items: center;
+.padding {
+ margin-left: 8px;
 }
 
+.counter__output {
+  margin: 5px;
+}
+
+
+
+.description {
+  display: flex;
+}
   
   .done {
-
+    font-style: italic;
+    display: flex;
     color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
   
   .do {
+    font-style: italic;
     text-decoration: line-through;
     color: gray;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    
   }

@@ -9,11 +9,9 @@ library.add(faTrash)
 
 export default function App() {
   const [items, setItems] = useState([
-    { id: 1, description: 'task', done: false},
-    { id: 2, description: 'task', done: false },
-    { id: 3, description: 'task', done: false },
-    { id: 4, description: 'task', done: true },
-    { id: 5, description: 'task', done: true },
+    { id: 1, description: 'banaan', done: false},
+    { id: 2, description: 'peer', done: false },
+    { id: 3, description: 'apple', done: false },
   ]);
 
 
@@ -71,7 +69,7 @@ export default function App() {
   return (
     
     <div>
-      <h1>To Do List</h1>
+      <h1>boodschappen lijst</h1>
       <hr />
       {items.map((item) => (
         <ToDoItem
@@ -102,14 +100,11 @@ function ToDoItem(props) {
     props.deleteItem(props.id);
   };
   return (
-    <div className='container'>
     <div className={props.done ? 'do' : 'done'}>
-      <input type="checkbox" onClick={doItem} checked={props.done ? 'checked' : ''}></input>
-      {props.description}
-      <Counter count={10} /> 
-      <button onClick={deleteItem}><FontAwesomeIcon icon="trash" /></button>
-      
-    </div>
+      <div className='padding'> <input type="checkbox" onClick={doItem} checked={props.done ? 'checked' : ''}></input></div>
+      <div className='padding'> {props.description}</div>
+      <div className='padding'> <Counter count={10} /> </div>
+      <div className='padding'> <button onClick={deleteItem}><FontAwesomeIcon icon="trash" /></button></div>
     </div>
   );
 }
